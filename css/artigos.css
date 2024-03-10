@@ -21,6 +21,7 @@
   .artigos {
     grid-template-columns: 1fr;
     margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .artigos img {
@@ -64,4 +65,30 @@
   max-width: 300px;
   /* object-fit: cover; */
 }
+
+@media (max-width: 800px){
+  .artigo-slide h2 {
+    font-size: 1.25rem;
+  }
+
+  .artigo-slide p {
+    font-size: 0.825rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .artigo-slide h2 {
+    font-size: 0.825rem;
+  }
+
+  .artigo-slide p {
+    font-size: 0.5rem;
+  }
+
+  .artigo-slide img {
+    width: 200px;
+  }
+}
+
+
 
