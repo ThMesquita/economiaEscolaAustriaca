@@ -1,0 +1,67 @@
+.artigos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.artigos-introducao .titulo-h1 {
+  margin-bottom: 20px;
+}
+
+.artigos-introducao p {
+  font-size: 1.25rem;
+  max-width: 28ch;
+  margin-bottom: 40px;
+  color: #202020;
+}
+
+
+@media (max-width: 800px) {
+  .artigos {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .artigos img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+
+
+  .artigos-introducao .titulo-h1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .artigos-introducao p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: none;
+    text-align: center;
+  }
+
+  .artigos-introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.artigo-slide li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* .artigos-slide a {
+  display: fle;
+} */
+
+.artigo-slide li img {
+  max-width: 300px;
+  /* object-fit: cover; */
+}
+

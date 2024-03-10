@@ -1,0 +1,43 @@
+.introducao {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introducao h1 {
+    margin-bottom: 20px;
+}
+
+.introducao h2 {
+    color: #312a28;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.introducao p {
+    text-align: center;
+}
+
+.introducao-pensadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.introducao-pensadores img {
+    border-radius: 4px;
+}
+
+@media (max-width: 800px){
+    .introducao {
+        margin-top: 40px;
+    }
+
+    .introducao-pensadores img {
+        max-width: 100px;
+    }
+}

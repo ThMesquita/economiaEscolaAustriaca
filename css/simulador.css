@@ -67,7 +67,7 @@
   margin-top: 16px;
   font-size: 1.25rem;
   padding: 4px 16px;
-  background: #e8473d;
+  background: #0047ab;
   border-radius: 4px;
   text-align: center;
   color: white;
@@ -97,7 +97,7 @@ input[type="number"]::-webkit-inner-spin-button {
   right: 95%;
   position: absolute;
   border-radius: 5px;
-  background: #e8473d;
+  background: #0047ab;
 }
 .range-input {
   position: relative;
@@ -116,7 +116,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  background: #e8473d;
+  background: #0047ab;
   pointer-events: auto;
   -webkit-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -126,7 +126,7 @@ input[type="range"]::-moz-range-thumb {
   width: 17px;
   border: none;
   border-radius: 50%;
-  background: #e8473d;
+  background: #0047ab;
   pointer-events: auto;
   -moz-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
+<html lang="pt-br" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Invicta Financeira</title>
+  <title>Escola Austriaca - El Salvador</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,80 +11,105 @@
 <body>
   <header class="header-bg" data-tab="menu">
     <div class="header container">
-      <img src="./img/Logo.svg" alt="Logo">
+      <img class="logo" src="./img/logoElsalvador.png" alt="Logo">
       <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <ul class="header-menu" data-menu="list" id="menu">
-        <li><a href="#emprestimos">Emprestimo</a></li>
-        <li><a href="#duvidas">Dúvidas</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#escola">Escola</a></li>
+        <li><a href="#artigos">Artigos</a></li>
+        <li><a href="#relacao">Relação</a></li>
+        <li><a href="#duvidas">Quiz</a></li>
       </ul>
     </div>
-
   </header>
-  <section class="container emprestimos" data-anime="scroll" id="emprestimos">
-    <div class="emprestimos-introducao">
-      <h1 class="titulo-h1">Empréstimos Consignado</h1>
-      <p>Contrate um empréstimo consignado com as mlhores taxas</p>
-      <a href="https://wa.me/5511949510233" target="_blank">
-        <img src="./img/redes/logo-whats.png" alt="whatsApp">
-        <span>Chamar atendente</span>
-      </a>
-    </div>
-    <div class="wrapper">
-      <h2>Simulador</h2>
-      <p>Parcelas em 84x</p>
-      <div class="price-input">
-        <div class="field">
-          <span>Parcela</span>
-          <input type="number" class="input-max" value="100" oninput="verificarValor(this)">
+  
+
+  <section class="container introducao">
+    <h1 class="titulo-h1">Introdução</h1>
+    <ul>
+      <li>
+        <p>A Escola Austríaca se originou em Viena no final do século <strong data-tooltip aria-label="19">XIX</strong> e início do século <strong data-tooltip aria-label="20">XX</strong>. Os economistas austríacos se destacam por sua defesa da <strong data-tooltip aria-label="Cada indivíduo tem o direito de tomar suas próprias decisões sobre como produzir, consumir e trocar bens e serviços.">liberdade econômica</strong> dos indivíduos e sua oposição a <strong data-tooltip aria-label="Impostos, regulamentações e programas de bem-estar social, distorce o livre mercado e impede o crescimento econômico.">intervenções governamentais excessivas</strong> na economia.</p>
+      </li>
+      <li>
+        <h2>Principais pensadores</h2>
+        <div class="introducao-pensadores">
+          <img data-tooltip aria-label="Carl Menger: Fundador da Escola Austríaca, Menger desenvolveu a teoria do valor subjetivo." src="./img/carlmenger.jpg" alt="Carl Menger">
+          <img data-tooltip aria-label="Ludwig von Mises: Mises foi um dos principais defensores da economia de livre mercado no século XX." src="./img/ludwigvonMises.jpg" alt="Ludwig Von Mises">
+          <img data-tooltip aria-label="Friedrich Hayek: Ganhador do Prêmio Nobel de Economia, Hayek defendeu a liberdade individual e o livre mercado." src="./img/FriedrichHayek.jpg" alt="Friedrich Hayek">
+          <img data-tooltip aria-label="Murray Rothbard: Rothbard foi um dos principais teóricos do libertarianismo e da anarcocapitalismo." src="./img/MurrayRothbard.jpg" alt="Murray Rothbard">
         </div>
-        <div class="liberado">
-          <span>Valor liberado</span>
-          <span class="price">R$ 2.222,00</span>
-        </div>
-      </div>
-      <div id="aviso"></div>
-      <div class="slider">
-        <div class="progress"></div>
-      </div>
-      <div class="range-input">
-        <input type="range" class="range-max" min="10" max="3000" value="100" step="1">
-      </div>
-    </div>
+      </li>
+    </ul>
+    <h2>El Salvador</h2>
+    <p>El Salvador vem enfrentando grandes problemas econômicos devido a acontecimentos do passado, como <strong data-tooltip aria-label="1980-1992">guerras civis</strong> e sua <strong data-tooltip aria-label="1821">independência</strong> relativamente recente. El Salvador poderia ter melhorias significativas com a aplicação de ideias da Escola Austríaca, como a defesa da <strong data-tooltip aria-label="Livre mercado, livre comércio e mínima intervenção estatal na economia.">liberdade individual</strong>, do <strong data-tooltip aria-label="Eliminação de barreiras comerciais: Tarifas, quotas de importação e outras. Livre iniciativa: Os indivíduos e as empresas devem ser livres para iniciar e conduzir suas atividades econômicas sem interferência estatal.">livre comércio</strong> e da <strong data-tooltip aria-label="Impede que os indivíduos tomem suas próprias decisões, gera custos desnecessários e impede o livre funcionamento do mercado e limita a entrada de novas empresas no mercado e desestimula a inovação.">redução da burocracia</strong>.</p>
   </section>
 
-  <section class="duvidas container" data-anime="scroll" id="duvidas">
-    <h1 class="titulo-h1">Dúvidas</h1>
-    <div class="duvidas-container">
-      <dl class="duvidas-lista" data-tab="accordion">
-        <dt>Como funciona o consignado?</dt>
-        <dd>O empréstimo consignado é uma modalidade em que o pagamento das parcelas é descontado diretamente do salário ou benefício previdenciário do solicitante. Isso reduz o risco para o credor, o que muitas vezes resulta em taxas de juros mais baixas em comparação com outras formas de empréstimo.</dd>
-        <dt>Quais as vantagens e desvantagens?</dt>
-        <dd>Vantagens incluem taxas de juros mais baixas, aprovação mais fácil para quem tem restrições de crédito e parcelas fixas. Desvantagens podem incluir o comprometimento da renda mensal e restrições de valor e prazo.</dd>
-        <dt>Quem pode solicitar um empréstimo?</dt>
-        <dd>Geralmente, podem solicitar servidores públicos, aposentados e pensionistas do INSS, funcionários de empresas privadas conveniadas e militares. Os critérios específicos podem variar de acordo com a instituição financeira.</dd>
-        <dt>Quais documentos são necessários?</dt>
-        <dd>Os documentos geralmente incluem comprovante de identidade, comprovante de renda e, em alguns casos, comprovante de residência. Servidores públicos podem precisar apresentar contracheque, enquanto aposentados e pensionistas podem precisar do extrato de pagamento do benefício.</dd>
-      </dl>
-      <img src="./img/casal.jpg" alt="casal">
+
+  <article class="escola container" data-anime="scroll" id="escola">
+    <h1 class="titulo-h1">Escola</h1>
+    <div class="escola-container">
+      <div data-tooltip aria-label="Bandeira Escola Austriaca">
+        <img class="img-projeto" src="./img/escola.jpg" alt="Bandeira Escola Austriaca">
+      </div>
+      <ul>
+        <li class="li-before"><strong>Teoria do valor subjetivo</strong>
+          <p>O valor de um bem ou serviço não é determinado por fatores externos, como custos de produção ou tempo de trabalho, mas sim pela utilidade subjetiva que ele oferece a cada indivíduo.</p>
+        </li>
+        <li class="li-before"><strong>Teoria do ciclo econômico</strong>
+          <p>O governo e o banco central expandem a oferta de moeda e crédito, através de políticas como juros baixos, isso leva a distorções no mercado, como preços de ativos inflacionados. Empresários e consumidores tomam decisões de investimento baseadas em sinais distorcidos, levando a uma má alocação de recursos.</p>
+        </li>
+        <li class="li-before"><strong>Teoria monetária</strong>
+          <p>O padrão-ouro é visto como o sistema monetário ideal, pois garante a estabilidade do valor da moeda e limita a capacidade do governo de manipular a economia.</p>
+        </li>
+        <li class="li-before"><strong>Teoria da escolha pública</strong>
+          <p>A Escola Austríaca defende a limitação do poder do Estado e a descentralização do poder como forma de reduzir essas falhas.</p>
+        </li>
+        <li class="li-before"><strong>Princípio da Ação Humana</strong>
+          <p>Princípio da Ação Humana</p>
+        </li>
+      </ul>
     </div>
+  </article>
+  <section class="container artigos" data-anime="scroll" id="artigos">
+    <div class="artigos-introducao">
+      <h1 class="titulo-h1">Artigos</h1>
+      <!-- <p>Artigos produzidos pela Escola Austríaca de Economia são textos acadêmicos, ensaios e análises que aplicam os princípios e teorias econômicas desenvolvidas por pensadores como Ludwig von Mises, Friedrich Hayek e Murray Rothbard, entre outros. Esses artigos geralmente se concentram em temas como teoria monetária, ciclos econômicos, empreendedorismo, teoria do valor, economia do conhecimento, economia institucional, entre outros.</p>
+    </div>
+    <div data-tooltip aria-label="Bandeira Singapura">
+      <img src="./img/singapurabandeira.jpg" alt="Bandeira Singapura">
+    </div> -->
   </section>
 
   <section class="slide-nav" data-anime="scroll">
-    <ul class="custom-controls">
-      <li><img src="img/slide/foto1-thumb.jpg" alt="thumb 1"></li>
-      <li><img src="img/slide/foto2-thumb.jpg" alt="thumb 2"></li>
-      <li><img src="img/slide/foto3-thumb.jpg" alt="thumb 3"></li>
-      <li><img src="img/slide/foto4-thumb.jpg" alt="thumb 4"></li>
-      <li><img src="img/slide/foto5-thumb.jpg" alt="thumb 5"></li>
-    </ul>
     <div class="slide-wrapper">
-      <ul class="slide">
-        <li><img src="img/slide/foto1.jpg" alt="Foto 1"></li>
-        <li><img src="img/slide/foto2.jpg" alt="Foto 2"></li>
-        <li><img src="img/slide/foto3.jpg" alt="Foto 3"></li>
-        <li><img src="img/slide/foto4.jpg" alt="Foto 4"></li>
-        <li><img src="img/slide/foto5.jpg" alt="Foto 5"></li>
+      <ul class="slide artigo-slide">
+        <li>
+          <a href="https://br.cointelegraph.com/news/el-salvador-bitcoin-holdings-164m-btc-profits-50m" target="_blank">
+            <h2>Participações de Bitcoin de El Salvador atingiram o recorde de US$ 164 milhões, enquanto os lucros do BTC ultrapassam US$ 50 milhões</h2>
+            <p>A adoção do Bitcoin em El Salvador rendeu ao governo até US$ 53 milhões em lucros graças às máximas recordes de preços do BTC.</p>
+            <img data-tooltip aria-label="Bitcoin" src="./img/artigos/1.png" alt="BTC">
+          </a>
+        </li>
+        <li>
+          <a href="https://g1.globo.com/mundo/noticia/2023/06/16/por-que-presidente-de-el-salvador-vai-extinguir-mais-de-83-das-cidades-do-pais.ghtml" target="_blank">
+            <h2>Por que presidente de El Salvador vai extinguir mais de 83% das cidades do país</h2>
+            <p>O presidente Nayib Bukele e o Congresso do país aprovaram um projeto que extingue centenas de municípios. Críticos afirmam que lei é jogada eleitoral do presidente.</p>
+            <img data-tooltip aria-label="Nayib Bukele: Presidente de El Salvador" src="./img/artigos/2.png" alt="Presidente">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gazetadopovo.com.br/mundo/presidente-de-el-salvador-anuncia-cerco-militar-em-regiao-dominada-por-gangues-no-pais/" target="_blank">
+            <h2>Presidente de El Salvador anuncia cerco militar em região dominada por gangues no país</h2>
+            <p>O presidente de El Salvador, Nayib Bukele, anunciou nessa terça-feira (1º), por meio de suas redes sociais, a criação de um cerco militar em Cabañas, uma das regiões dominadas por gangues no país.</p>
+            <img data-tooltip aria-label="Nayib Bukele: Presidente de El Salvador" src="./img/artigos/3.png" alt="Presidente">
+          </a>
+        </li>
+        <li>
+          <a href="https://www1.folha.uol.com.br/mundo/2024/02/bukele-desarticulou-gangues-em-el-salvador-a-custa-de-direitos-civis.shtml" target="_blank">
+            <h2>Bukele desarticulou gangues em El Salvador à custa de direitos civis</h2>
+            <p>Governo reduziu índices de violência, entre os mais altos do mundo, com encarceramento em massa e restrições à defesa de presos</p>
+            <img data-tooltip aria-label="Presidiários" src="./img/artigos/4.png" alt="Gangues">
+          </a>
+        </li>
       </ul>
     </div>
     <div class="arrow-nav">
@@ -94,50 +118,117 @@
     </div>
   </section>
 
-  <article class="contato container" data-anime="scroll" id="contato">
-    <h1 class="titulo-h1">Contato</h1>
-    <div class="contato-container">
-      <div data-tooltip aria-label="Endereço próximo a praça.">
-        <a href="https://www.google.com/maps/place/Tv.+do+Carmo,+22+-+Centro,+Itu+-+SP,+13300-013/@-23.2663,-47.3006411,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf501b444fd8b5:0x4e7a4ae1c00d2bfa!8m2!3d-23.2663049!4d-47.2980662!16s%2Fg%2F11c24xgnxz?entry=ttu" target="_blank"><img src="./img/mapa.jpg" alt="mapa"></a>
+  <article class="escola container" data-anime="scroll" id="escola">
+    <h1 class="titulo-h1">El Salvador</h1>
+    <div class="escola-container">
+      <div data-tooltip aria-label="Habitante de El Salvador">
+        <img class="img-projeto" src="./img/sociedade.jpg" alt="Sociedade">
       </div>
-      <ul>
-        <li><a href="mailto:contato@invictafinanceira.com.br">contato@invictafinanceira.com.br</a></li>
-        <li><a href="tel:+5511949510233">+55 (11) 94951-0233</a></li>
-        <li><a href="https://www.google.com/maps/place/Tv.+do+Carmo,+22+-+Centro,+Itu+-+SP,+13300-013/@-23.2663,-47.3006411,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf501b444fd8b5:0x4e7a4ae1c00d2bfa!8m2!3d-23.2663049!4d-47.2980662!16s%2Fg%2F11c24xgnxz?entry=ttu" target="_blank">Travesa do Carmo, nº 22</a></li>
-        <li><a href="https://www.google.com/maps/place/Tv.+do+Carmo,+22+-+Centro,+Itu+-+SP,+13300-013/@-23.2663,-47.3006411,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf501b444fd8b5:0x4e7a4ae1c00d2bfa!8m2!3d-23.2663049!4d-47.2980662!16s%2Fg%2F11c24xgnxz?entry=ttu" target="_blank">Itu - São Paulo</a></li>
-        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+      <ul class="scroll-overflow">
+        <li class="li-before">
+          <strong>Economia:</strong>
+          <ul class="margin-left">
+            <li>A economia de El Salvador é caracterizada por uma mistura de setores, incluindo:</li>
+            <li>Agricola: cultivos como café, cana-de-açúcar, milho e frutas tropicais sendo importantes para a exportação. Industria: cada vez mais em crescimento, especialmente na produção têxtil, eletrônicos e alimentos processados.</li>
+            <li>Industria: cada vez mais em crescimento, especialmente na produção têxtil, eletrônicos e alimentos processados.</li>
+            <li>Serviços: são uma parte significativa da economia salvadorenha, incluindo turismo, telecomunicações, serviços financeiros e remessas de trabalhadores no exterior, que representam uma grande fonte de renda para muitas famílias. O país possui uma economia de mercado aberta, que tem se beneficiado de acordos comerciais internacionais e da proximidade , principalmente, com os Estados Unidos.</li>
+          </ul>
+        </li>
+        <li class="li-before">
+        <strong>Sociedade:</strong>
+          <p class="margin-left">A sociedade de El Salvador é diversa e composta por várias etnias, com a maioria da população sendo mestiça, descendente de ameríndios e espanhóis. A sociedade salvadorenha é influenciada por uma mistura de culturas indígenas, espanholas e africanas, refletida na sua culinária, música e tradições. No entanto, o país enfrenta desafios socioeconômicos significativos, incluindo altos níveis de desigualdade de renda, pobreza e violência relacionada a gangues, sendo assim a criminalidade é uma preocupação importante para os cidadãos salvadorenhos.</p>
+        </li>
+        <li class="li-before">
+          <strong>Politica:</strong>
+          <ul class="margin-left">
+            <li>O sistema político salvadorenho é dominado por dois principais partidos políticos:</li>
+            <li>Aliança Republicana Nacionalista (ARENA) : é um partido político de centro-direita fundado em 1981 por militares, empresários e políticos conservadores, em resposta à insurgência guerrilheira durante a guerra civil, alem disso, recebeu apoio dos Estados Unidos durante a guerra civil do país. Ela defende políticas econômicas liberais, incluindo privatizações e abertura de mercado, com destaque para as presidências de Alfredo Cristiani e de seu sucessor, Armando Calderón Sol.</li>
+            <li>Frente Farabundo Martí para la Liberación Nacional (FMLN): O FMLN é um partido político de esquerda fundado em 1980 como uma coalizão de várias organizações guerrilheiras durante a guerra civil. Seu nome homenageia Farabundo Martí, líder revolucionário salvadorenho do século XX. Após o acordo de paz em 1992, o FMLN se transformou em um partido político legal e passou a participar das eleições democráticas, se consolidando como o principal partido de oposição, defendendo políticas progressistas, incluindo reforma agrária, justiça social e inclusão dos setores marginalizados.</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </article>
 
+
+  <!-- <article class="escola container" data-anime="scroll" id="escola">
+    <h1 class="titulo-h1">Relações</h1>
+    <div class="escola-container">
+      <div data-tooltip aria-label="Bandeira Singapura">
+        <img class="img-projeto" src="./img/elsalvadorBandeira.jpg" alt="Bandeira Singapura">
+      </div>  
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur earum qu</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum inventore, officia odio quidem quaerat?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quia! Iusto cumque dignissimos voluptatum mollitia.</li>
+      </ul>
+    </div>
+  </article>
+
+  <section class="slide-nav" data-anime="scroll">
+    <div class="slide-wrapper2">
+      <ul class="slide2 artigo-slide">
+        <li>
+          <h2>Escola 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor reprehenderit explicabo! Corrupti, laudantium. Quod veniam esse sint pariatur nihil, ratione, alias magnam possimus illum ipsa quidem blanditiis officia sit!</p>
+          <img data-tooltip aria-label="Mão Invisível" src="./img/maoinvisivel.jpg" alt="Mao Invisivel">
+         </li>
+         <li>
+          <h2>Escola 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor reprehenderit explicabo! Corrupti, laudantium. Quod veniam esse sint pariatur nihil, ratione, alias magnam possimus illum ipsa quidem blanditiis officia sit!</p>
+          <img data-tooltip aria-label="Mão Invisível" src="./img/maoinvisivel.jpg" alt="Mao Invisivel">
+         </li>
+         <li>
+          <h2>Escola 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor reprehenderit explicabo! Corrupti, laudantium. Quod veniam esse sint pariatur nihil, ratione, alias magnam possimus illum ipsa quidem blanditiis officia sit!</p>
+          <img data-tooltip aria-label="Mão Invisível" src="./img/maoinvisivel.jpg" alt="Mao Invisivel">
+         </li>
+         <li>
+          <h2>Escola 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor reprehenderit explicabo! Corrupti, laudantium. Quod veniam esse sint pariatur nihil, ratione, alias magnam possimus illum ipsa quidem blanditiis officia sit!</p>
+          <img data-tooltip aria-label="Mão Invisível" src="./img/maoinvisivel.jpg" alt="Mao Invisivel">
+         </li>
+         <li>
+          <h2>Escola 5</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor reprehenderit explicabo! Corrupti, laudantium. Quod veniam esse sint pariatur nihil, ratione, alias magnam possimus illum ipsa quidem blanditiis officia sit!</p>
+          <img data-tooltip aria-label="Mão Invisível" src="./img/maoinvisivel.jpg" alt="Mao Invisivel">
+         </li>
+      </ul>
+    </div>
+    <div class="arrow-nav">
+      <button class="prev2"></button>
+      <button class="next2"></button>
+    </div>
+  </section> -->
+
+  <section class="duvidas container" data-anime="scroll" id="duvidas">
+    <h1 class="titulo-h1">Quiz</h1>
+    <div class="duvidas-container">
+      <dl class="duvidas-lista" data-tab="accordion">
+        <dt>Quem é considerado o fundador da Escola Austríaca de Economia?<br>A) Ludwig Von Mises<br>B) Carl Menger<br>C) Friedrich Hayek<br>D) Murray Rothbard</dt>
+        <dd>Carl Menger</dd>
+        <dt>Qual é a abordagem da Escola Austríaca em relação ao valor econômico?<br>A) Valor intrínseco determinado pelo trabalho<br>B) Valor subjetivo baseado nas preferências individuais<br>C) Valor determinado pela oferta e demanda do mercado<br>D) Valor fixo estabelecido pelo governo</dt>
+        <dd>Valor subjetivo baseado nas preferências individuais</dd>
+        <dt>Como a Escola Austríaca aborda os ciclos econômicos?<br>A) Atribui a culpa aos consumidores por suas escolhas<br>B) Enfatiza os benefícios do planejamento centralizado<br>C) Responsabiliza a intervenção estatal e a expansão monetária<br>D) Apoia o controle rígido do mercado pelo governo</dt>
+        <dd>Responsabiliza a intervenção estatal e a expansão monetária</dd>
+        <dt>Qual é a visão da Escola Austríaca sobre o sistema monetário?<br>A) Defende a manipulação da oferta monetária pelo governo<br>B) Abraça o sistema de reservas fracionárias<br>C)  Apoia a impressão ilimitada de dinheiro<br>D) Rejeita a utilização de moeda fiduciária</dt>
+        <dd>Rejeita a utilização de moeda fiduciária</dd>
+        <dt>Como a Escola Austríaca enxerga a função do empreendedor no sistema econômico?<br>A) Defende a manipulação da oferta monetária pelo governo Enfatiza a importância do lucro e das perdas no empreendedorismo<br>B) Reduz a importância do empreendedorismo<br>C)  Destaca o papel central do governo no empreendedorismo<br>D) Rejeita a utilização de moeda fiduciária</dt>
+        <dd>Enfatiza a importância do lucro e das perdas no empreendedorismo</dd>
+      </dl>
+      <div data-tooltip aria-label="Bandeira Singapura">
+        <img src="./img/elsalvadorBandeira.jpg" alt="Bandeira Singapura">
+      </div>
+    </div>
+  </section>
+
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/Logo-w.svg" alt="logo">
-      <div class="footer-contato">
-        <h3>Contato</h3>
-        <ul>
-          <li><a href="tel:+5511949510233">+55 (11) 94951-0233</a></li>
-          <li><a href="tel:+551127159990">+55 (11) 2715-9990</a></li>
-        </ul>
-        <div class="footer-redes">
-          <a href="https://www.instagram.com/invictafinanceira/" target="_blank">
-            <img src="./img/redes/instagram-w.svg" width="32" height="32" alt="Instagram">
-          </a>
-          <a href="https://wa.me/5511949510233" target="_blank">
-            <img src="./img/redes/whatsapp-w.svg" width="32" height="32" alt="Whatsapp">
-          </a>
-          <a href="https://www.facebook.com/invictafinanceira/" target="_blank">
-            <img src="./img/redes/facebook-w.svg" width="32" height="32" alt="Facebook">
-          </a>
-        </div>
-      </div>
-      <div class="footer-localizacao">
-        <h3>Endereço</h3>
-        <a href="https://www.google.com/maps/place/Tv.+do+Carmo,+22+-+Centro,+Itu+-+SP,+13300-013/@-23.2663,-47.3006411,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf501b444fd8b5:0x4e7a4ae1c00d2bfa!8m2!3d-23.2663049!4d-47.2980662!16s%2Fg%2F11c24xgnxz?entry=ttu">Travessa do Carmo, 22 - Centro. Itu - SP</a>
-      </div>
-      <p class="footer-copy">Invicta © Alguns Direitos Reservados.</p>
+      <img class="logo" src="./img/logoElsalvador.png" alt="logo">
+      <p class="footer-copy">Alguns Direitos Reservados.</p>
     </div>
   </footer>
+  
 
   <script type="module" src="./script.js"></script>
 </body>

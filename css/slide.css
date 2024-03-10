@@ -1,16 +1,20 @@
-.slide-wrapper {
+.slide-wrapper,
+.slide-wrapper2 {
   overflow: hidden;
 }
 
-.slide {
+.slide,
+.slide2 {
   display: flex;
 }
 
-.slide:hover {
+.slide:hover,
+.slide2:hover {
   will-change: transform;
 }
 
-.slide li {
+.slide li,
+.slide2 li {
   flex-shrink: 0;
   width: 80vw;
   max-width: 800px;
@@ -23,7 +27,8 @@
   transition: 0.4s;
 }
 
-.slide li.active {
+.slide li.active,
+.slide2 li.active {
   opacity: 1;
   transform: scale(1);
 }
@@ -38,7 +43,7 @@
   display: block;
   width: 12px;
   height: 12px;
-  background: #e8473d;
+  background: #0047ab;
   border-radius: 50%;
   overflow: hidden;
   text-indent: -9999px;
@@ -47,17 +52,19 @@
 
 [data-control="slide"] li.active a,
 [data-control="slide"] li a:hover {
-  background: #b71111;
+  background: #00193B;
 }
 
-.custom-controls {
+.custom-controls,
+.custom-controls2 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
-.custom-controls li {
+.custom-controls li,
+.custom-controls2 li {
   opacity: 0.8;
   transform: scale(0.8);
   width: 40px;
@@ -69,7 +76,8 @@
   transition: 0.3s;
 }
 
-.custom-controls li.active {
+.custom-controls li.active,
+.custom-controls2 li.active {
   opacity: 1;
   transform: scale(1);
 }
@@ -87,9 +95,10 @@
   color: white;
   width: 40px;
   height: 40px;
-  background: #e8473d url("../img/slide/arrow.svg") center center no-repeat;
+  background: #0047ab url("../img/slide/arrow.svg") center center no-repeat;
 }
 
-.arrow-nav button.prev {
+.arrow-nav button.prev,
+.arrow-nav button.prev2 {
   transform: rotate(-180deg);
 }

@@ -5,7 +5,7 @@
 @media (max-width: 800px) {
   [data-menu="button"] {
     display: flex;
-    background: #e8473d;
+    background: #0047ab;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
